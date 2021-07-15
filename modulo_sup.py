@@ -1,4 +1,4 @@
-from os import system, write
+from os import system
 from pacote.sup_alimentos import alimento01, alimento02, alimento03
 from pacote.sup_bebidas import bebida01, bebida02, bebida03
 from pacote.sup_acougue import carne01, carne02, carne03
@@ -11,7 +11,7 @@ def cabecalho(msg):
     print(msg.center(50))
     print('=' * 65)
 
-# Menus dos alimentos do Mercado
+# Menu dos alimentos do Mercado
 
 carrinho = []
 
