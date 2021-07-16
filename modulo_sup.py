@@ -2,7 +2,7 @@ from os import system
 from pacote.sup_alimentos import alimento01, alimento02, alimento03
 from pacote.sup_bebidas import bebida01, bebida02, bebida03
 from pacote.sup_acougue import carne01, carne02, carne03
-import csv
+import pagamento
 
 # Cabeçalho Menus
 
@@ -31,7 +31,7 @@ def menu_alimentos():
             carrinho.append(alimento03)
         elif escolha == 4:
             system('cls')
-            formas_pagamentos()
+            pagamento.formas_pagamentos()
             fim_programa()
             
         espaco()
@@ -56,7 +56,7 @@ def menu_acougue():
             carrinho.append(carne03)
         elif escolha == 4:
             system('cls')
-            formas_pagamentos()
+            pagamento.formas_pagamentos()
             fim_programa()
             
         espaco()
@@ -81,8 +81,7 @@ def menu_bebidas():
             carrinho.append(bebida03)
         elif escolha == 4:
             system('cls')
-            formas_pagamentos()
-            gerarCsv()
+            pagamento.formas_pagamentos()
             fim_programa()
     
         espaco()
@@ -90,63 +89,19 @@ def menu_bebidas():
             print(produtos)
         espaco()
 
-# Criar espaço entre as opções (=)
-
-def espaco():
-    print('=' * 65)
-
-# Função pagamento
-
-def formas_pagamentos():
-
-    total = 0
-    for item in carrinho:
-        for nome, valor in item.items():
-            total += valor
-            
-    espaco()        
-    print('            O valor total de suas compras é {:.2f}'.format (total))
-    espaco()
-
-    print('!!! Desconto de 5% para pagamentos em Dinheiro ou no Débito !!!')
-    espaco()
-
-    pagamento = int(input('Qual a forma de pagamento?\nDigite [1] Dinheiro\nDigite [2] Débito\nDigite [3] Crédito\n=> '))
-
-    if pagamento == 1:
-        total_dinheiro = 0
-        total_dinheiro = total - (total * 5 / 100)
-        system('cls')
-        espaco()
-        print('            O valor a ser pago é de R$ {:.2f}'. format(total_dinheiro))
-    elif pagamento == 2:
-        total_débito = 0
-        total_débito = total - (total * 5 / 100)
-        system('cls')
-        espaco()
-        print('            O valor a ser pago é de R$ {:.2f}'.format(total_débito))
-    elif pagamento == 3:
-        system('cls')
-        espaco()
-        print('            O valor total a ser pago é de R$ {:.2f}'.format(total))
-
 # Encerrar programa
 
 def fim_programa():
-
+    
     espaco()
     print('      Obrigado por comprar conosco!!! VOLTE SEMPRE!!!')   
     espaco()
     exit()
 
+# Criar espaço entre as opções (=)
 
-def gerarCsv():
-    
-    with open('produtos.csv', 'w') as arquivo:
-        writer = csv.writer(arquivo)
-        writer.writerow(["Produto;"+"Valor"])
-        for produtos,valor in carrinho.items():
-            writer.writerow([produtos, valor])
+def espaco():
+    print('=' * 65)
 
 
 

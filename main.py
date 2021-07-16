@@ -1,8 +1,13 @@
 from os import system
-from modulo_sup import cabecalho, menu_alimentos, espaco, menu_acougue, menu_bebidas
+from modulo_sup import cabecalho, menu_alimentos, menu_acougue, menu_bebidas
 from pacote.sup_alimentos import lista_alimentos
 from pacote.sup_bebidas import lista_bebidas
 from pacote.sup_acougue import lista_carnes
+
+# Criar espaço entre as opções (=)
+
+def espaco():
+    print('=' * 65)
 
 # Menu principal 
 
@@ -14,7 +19,6 @@ while True:
     print('[2] - Açougue')
     print('[3] - Bebidas')
     espaco()
-
 
     opcao = int(input('Digite sua opção: '))
     if opcao == 1:
