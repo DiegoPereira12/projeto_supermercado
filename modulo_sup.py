@@ -3,6 +3,7 @@ from pacote.sup_alimentos import alimento01, alimento02, alimento03
 from pacote.sup_bebidas import bebida01, bebida02, bebida03
 from pacote.sup_acougue import carne01, carne02, carne03
 import pagamento
+import gera_csv
 
 # Cabeçalho Menus
 
@@ -32,6 +33,7 @@ def menu_alimentos():
         elif escolha == 4:
             system('cls')
             pagamento.formas_pagamentos()
+            gera_csv.gerarCsv()
             fim_programa()
             
         espaco()
@@ -57,6 +59,7 @@ def menu_acougue():
         elif escolha == 4:
             system('cls')
             pagamento.formas_pagamentos()
+            gera_csv.gerarCsv()
             fim_programa()
             
         espaco()
@@ -82,6 +85,7 @@ def menu_bebidas():
         elif escolha == 4:
             system('cls')
             pagamento.formas_pagamentos()
+            gera_csv.gerarCsv()
             fim_programa()
     
         espaco()
