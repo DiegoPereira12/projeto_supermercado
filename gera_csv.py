@@ -3,7 +3,7 @@ import modulo_sup
 
 def gerarCsv():
     
-    with open('produtos4.csv', 'w') as arquivo:
+    with open('produtos1.csv', 'w') as arquivo:
         writer = csv.writer(arquivo)
         writer.writerow(["Produtos","Valor"])
         for item in modulo_sup.carrinho:
