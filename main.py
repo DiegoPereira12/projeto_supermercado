@@ -38,6 +38,7 @@ while True:
         pagamento.formas_pagamentos()
         gera_csv.gerarCsv()
         modulo_sup.fim_programa()
+        
     else:
         system('cls')
         modulo_sup.espaco()
