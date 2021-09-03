@@ -12,7 +12,7 @@ Efetuar ação de compra de produtos e valores e armazenar no carrinho.
 ✔️ Imprimir a soma total do valores comprados <br>
 ✔️ Informar a Forma de Pagamento <br>
 ✔️ Na Hora do pagamento informar as opções de pagamento será Débito,Crédito ou Dinheiro <br>
-✔️ Se o Pagamento ser em dinheiro ou débito ganha desconto 5% do valor total do da Compra, em crédito não terá desconto <br>
+✔️ Pagamento em dinheiro ou débito ganha desconto 5% do valor total da Compra, em crédito não terá desconto <br>
 ✔️ Após concluir o pagamento armazenar os produtos comprados em um arquivo csv <br>
 
 >> <h3> Tecnologia utilizada </h3>
