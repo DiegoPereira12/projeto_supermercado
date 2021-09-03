@@ -1,15 +1,24 @@
-Projeto supermercado
+> <h1>Projeto Supermercado 🛒 </h1>
 
-Requisitos:
+>> <h2>Requisitos:</h2>
 
 Criar os arquivos em estruturas de módulos importados no programa principal (main).
-Efetuar ação de compra produtos e valores e armazenar no carrinho.
+Efetuar ação de compra de produtos e valores e armazenar no carrinho.
 
-Trabalhar estruturas de Exceções e Condicionais, efetuando perguntas ao usuário e passando opções de execução na saída e tratando as exceções.
-Informar a Forma de Pagamento. Tratar os erros de entrada invalida dos usuários.
-Após a conclusão de Compra imprimir em tela os itens comprados. Imprimir a soma total do valores comprados.
+✔️ Tratar os erros de entrada inválida dos usuários <br>
+✔️ Trabalhar estruturas de Exceções e Condicionais <br>
+✔️ Efetuar perguntas ao usuário passar opções de execução <br>
+✔️ Após a conclusão das compras imprimir em tela os itens comprados <br>
+✔️ Imprimir a soma total do valores comprados <br>
+✔️ Informar a Forma de Pagamento <br>
+✔️ Na Hora do pagamento informar as opções de pagamento será Débito,Crédito ou Dinheiro <br>
+✔️ Se o Pagamento ser em dinheiro ou débito ganha desconto 5% do valor total do da Compra, em crédito não terá desconto <br>
+✔️ Após concluir o pagamento armazenar os produtos comprados em um arquivo csv <br>
 
-Na Hora do pagamento informar as opções de pagamento será Débito,Crédito ou Dinheiro. O usuário deverá entrar com o valor da opção.
-Caso a opção de Pagamento ser em dinheiro ou débito ganha desconto 5% do valor total do da Compra, em crédito não terá desconto. Se informar opção invalida gerar mensagem de exceção ao usuário.
+>> <h3> Tecnologia utilizada </h3>
 
-Após concluir o pagamento armazenar os produtos comprados em um arquivo csv.
+<table>
+  <tr>
+    <td>PYTHON</td>
+  </tr>
+</table>
