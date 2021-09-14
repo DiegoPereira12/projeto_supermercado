@@ -1,6 +1,6 @@
 > <h1>Projeto Supermercado 🛒 </h1>
 
->> <h1>Concluído 🆗 </h1>
+>> <h1>Status: Concluído 🆗 </h1>
 >> <h2>Requisitos:</h2>
 
 Criar os arquivos em estruturas de módulos importados no programa principal (main).
